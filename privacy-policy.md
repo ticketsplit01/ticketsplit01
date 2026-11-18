@@ -1,6 +1,6 @@
 # Política de Privacidad de TicketSplit
 
-**Última actualización:** 24 de octubre de 2026
+**Última actualización:** 9 de noviembre de 2026
 
 Esta Política de Privacidad describe cómo TicketSplit ("la App", "nosotros") recopila, usa y protege la información cuando usas nuestra aplicación móvil.
 
@@ -33,6 +33,8 @@ Si usas la opción "Reportar un error" o "Sugerir una mejora" dentro de la app, 
 
 ### 2.3 Fotos de recibos
 Si usas la función de escanear recibo, la foto se procesa **enteramente en tu dispositivo** usando Google ML Kit (reconocimiento de texto on-device). **La imagen nunca se sube a nuestros servidores ni a servidores de terceros.** La foto se guarda temporalmente en la memoria caché de tu teléfono mientras se procesa y luego se descarta.
+
+**Permiso de cámara:** la app te pide permiso para usar la cámara **solo** cuando tocas "Tomar foto" para escanear un recibo. Puedes negarlo y usar en su lugar una foto de tu galería. La cámara no se usa para ningún otro fin.
 
 ### 2.4 Identificadores de dispositivo y anónimos
 - Usamos **Firebase Authentication en modo anónimo**: a tu teléfono se le asigna un identificador aleatorio para poder sincronizar la mesa entre los distintos participantes. Este identificador no está vinculado a tu nombre, email ni ninguna otra información personal identificable.
@@ -88,6 +90,14 @@ Los reportes de fallos y datos de diagnóstico se conservan conforme a las polí
 
 Dependiendo de tu ubicación, puedes tener derecho a solicitar acceso, corrección o eliminación de tu información. Dado que TicketSplit no crea cuentas de usuario ni vincula datos a tu identidad, la forma más simple de eliminar la información de una mesa es esperar a que expire automáticamente (24 horas) o dejar de compartir el código de esa mesa. Si enviaste un reporte o sugerencia con tu correo, puedes pedirnos que lo eliminemos.
 
+**Cómo borrar tus datos desde la app:** abre TicketSplit → toca el ícono de **Ajustes** (engranaje) → **Borrar todos mis datos** → confirma. Esto elimina de inmediato:
+- las mesas que creaste desde ese teléfono (para todos los participantes), con sus participantes e items;
+- tu historial local de "mesas recientes";
+- las fotos de recibos que quedaron en la caché del teléfono;
+- tu identificador anónimo de Firebase.
+
+Los reportes y sugerencias que enviaste con tu correo **no** se pueden borrar desde la app; escríbenos a ticketsplit01@gmail.com y los eliminaremos. Los registros de fallos (Crashlytics) se conservan según la retención estándar de Firebase.
+
 Si tienes alguna solicitud relacionada con tus datos, contáctanos usando la información en la sección 9.
 
 ---
@@ -116,7 +126,7 @@ Si tienes preguntas sobre esta Política de Privacidad, puedes escribirnos a:
 
 # TicketSplit — Privacy Policy (English)
 
-**Last updated:** October 24, 2026
+**Last updated:** November 9, 2026
 
 This Privacy Policy explains how TicketSplit ("the App", "we") collects, uses, and protects information when you use our mobile app. By using TicketSplit, you agree to the practices described here.
 
@@ -133,6 +143,8 @@ This Privacy Policy explains how TicketSplit ("the App", "we") collects, uses, a
 **Bug reports and suggestions:** if you use "Report a bug" or "Suggest an improvement" in the app, we store the **email address** you type, your **message**, the app version, your device model, Android version, language, and the anonymous Firebase identifier. This is stored in Google Firebase / Cloud Firestore and used only to reply to you and fix problems. Only the TicketSplit team can read it; it is not visible to other users. Sending it is optional. We keep it as long as needed to handle your request, and you can ask us to delete it at any time.
 
 **Receipt photos:** processed **entirely on your device** using Google ML Kit on-device text recognition. **The image is never uploaded to our servers or any third party.** It's temporarily cached during processing and then discarded.
+
+**Camera permission:** the app asks for camera access **only** when you tap "Take photo" to scan a receipt. You can deny it and pick a photo from your gallery instead. The camera is not used for anything else.
 
 **Anonymous device identifiers:** we use **Firebase Authentication in anonymous mode** to assign your device a random identifier so the table can sync between participants — not linked to your name, email, or other personally identifiable information. For advertising, Google AdMob may collect your device's **advertising identifier** and ad interaction data, per its own privacy policy.
 
@@ -151,6 +163,14 @@ Table data is automatically deleted **24 hours** after creation. Your device als
 
 ## Your rights
 Since TicketSplit doesn't create user accounts or link data to your identity, the simplest way to remove a table's information is to let it expire automatically (24 hours) or stop sharing that table's code. If you sent a report or suggestion with your email, you can ask us to delete it. For any data-related request, contact us below.
+
+**How to delete your data from the app:** open TicketSplit → tap **Settings** (gear icon) → **Delete all my data** → confirm. This immediately deletes:
+- the tables you created on that phone (for all participants), including their participants and items;
+- your local "recent tables" history;
+- receipt photos left in the phone's cache;
+- your anonymous Firebase identifier.
+
+Bug reports and suggestions sent with your email **can't** be deleted from the app; email ticketsplit01@gmail.com and we'll delete them. Crash logs (Crashlytics) are kept according to Firebase's standard retention.
 
 ## Children's privacy
 TicketSplit is not directed at children under 13 and we do not knowingly collect information from children under 13.
